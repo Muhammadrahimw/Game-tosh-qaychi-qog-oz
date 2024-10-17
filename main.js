@@ -38,7 +38,7 @@ restart.addEventListener("click", () => {
 });
 
 gameNum.addEventListener("click", () => {
-  gameNumber = Number(prompt("Yutish chegarasini tanlang:"));
+  gameNumber = Number(prompt("O'yin chegarasini tanlang:"));
 });
 
 function func(randomNum) {
