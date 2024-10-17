@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(236, 230, 230);
+}
+
+h1,
+h3 {
+  letter-spacing: 4px;
+}
+
+header {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 2em;
+}
+
+.calcing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  margin-top: 1em;
+}
+
+.choosing {
+  margin-top: 6em;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 15em;
+}
+
+.choosing i {
+  scale: 3;
+}
+
+.choosing i:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.choosing i:active {
+  scale: 2.75;
+  transition: 0.075s;
+}
+
+.restart {
+  margin-top: 6em;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.btn {
+  font-size: 1em;
+  font-weight: 500;
+  width: 9em;
+  height: 2em;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.2em;
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.1);
+  color: black;
+  letter-spacing: 1.5px;
+}
+
+.btn:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  transition: 0.09s;
+}
+
+/* media */
+
+@media (max-width: 1440px) {
+  .choosing {
+    gap: 10em;
+    transition: 0.4s;
+  }
+}
+
+@media (max-width: 1024px) {
+  .calcing {
+    gap: 2em;
+    transition: 0.4s;
+  }
+  .choosing {
+    gap: 6em;
+    margin-top: 5em;
+  }
+  .choosing i {
+    scale: 2.5;
+    transition: 0.4s;
+  }
+  .restart {
+    margin-top: 5em;
+    transition: 0.4s;
+  }
+  .btn {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    transition: 0.4s;
+  }
+  h1 {
+    font-size: 1.5em;
+    transition: 0.4s;
+  }
+  .calcing {
+    font-size: 0.75em;
+  }
+  .choosing {
+    margin-top: 4em;
+    gap: 4em;
+  }
+  .choosing i {
+    scale: 2;
+  }
+  .restart {
+    margin-top: 4em;
+  }
+  .btn {
+    font-size: 0.5em;
+  }
+}
+
+@media (max-width: 580px) {
+  body {
+    font-size: 0.75em;
+  }
+  .btn {
+    width: 130px;
+    height: 30px;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    font-size: 1em;
+    height: 100%;
+  }
+  .calcing {
+    flex-direction: column;
+  }
+  .choosing {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+  }
+  .choosing i {
+    scale: 1;
+  }
+  .restart {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    padding-bottom: 2em;
+    gap: 1em;
+  }
+  .btn {
+    width: 200px;
+    height: 50px;
+  }
+}
